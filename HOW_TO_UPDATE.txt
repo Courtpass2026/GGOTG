@@ -1,0 +1,52 @@
+═══════════════════════════════════════════════════════
+  GREAT GOLF ON THE GO — CRM UPDATE INSTRUCTIONS
+═══════════════════════════════════════════════════════
+
+LIVE URL: https://gg-crm.vercel.app
+LOCAL FOLDER: /Users/sethbehrman/gg-crm/src/
+
+YOUR SUPABASE CREDENTIALS (keep private, never share):
+  - Project URL: (your URL here)
+  - Publishable Key: (your key here)
+
+═══════════════════════════════════════════════════════
+  HOW TO UPDATE THE APP
+═══════════════════════════════════════════════════════
+
+Every time you get an updated golf-crm.jsx file from Claude,
+follow these steps:
+
+STEP 1 — Open the new file in Antigravity (text editor)
+
+STEP 2 — Find these two lines near the very top:
+    const SUPABASE_URL = "YOUR_PROJECT_URL_HERE";
+    const SUPABASE_KEY = "YOUR_PUBLISHABLE_KEY_HERE";
+
+STEP 3 — Replace the placeholder text with your actual
+    Supabase credentials (keep the quotation marks)
+
+STEP 4 — Press Command + S to save the file
+
+STEP 5 — Go to Finder → press Command+Shift+G → type:
+    /Users/sethbehrman/gg-crm/src/
+    Drop the new golf-crm.jsx in there, replacing the old one
+
+STEP 6 — Open Terminal and run:
+    cd /Users/sethbehrman/gg-crm
+    vercel --prod
+
+STEP 7 — Wait about 30 seconds. You'll see:
+    ✅ Production: https://gg-crm.vercel.app
+    That means it's live!
+
+═══════════════════════════════════════════════════════
+  NOTES
+═══════════════════════════════════════════════════════
+
+- The app runs locally at localhost:3002 (run "npm start")
+- Data is stored in Supabase — it saves permanently
+- Never share your Supabase credentials with anyone
+- To test locally before deploying: npm start
+- To deploy live: vercel --prod
+
+═══════════════════════════════════════════════════════
