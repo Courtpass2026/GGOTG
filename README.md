@@ -1,2 +1,1 @@
-# GGOTG
-CRM
+# GGOTG - Great Golf on the Go CRM
